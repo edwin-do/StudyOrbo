@@ -1,0 +1,45 @@
+/* Colours used in StudyOrbo */
+
+/* text */
+.orange{
+    color: #ED9B82;
+}
+
+.dark-green{
+    color:#119C9A;
+}
+
+.light-green{
+    color:#BBDDCC;
+}
+
+.brown{
+    color:#CA9783;
+}
+
+.white{
+    color:#F8F9F8;
+}
+
+/* background */
+.fill-orange{
+    background-color: #ED9B82;
+}
+
+.fill-dark-green{
+    background-color:#119C9A;
+}
+
+.fill-light-green{
+    background-color:#BBDDCC;
+}
+
+.fill-brown{
+    background-color:#CA9783;
+}
+
+.fill-white{
+    background-color:#F8F9F8;
+}
+
+
