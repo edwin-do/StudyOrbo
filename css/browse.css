@@ -1,3 +1,7 @@
+a:hover{
+    color: #ED9B82;
+}
+
 #logo{
     position: absolute;
     width: 113px;
@@ -26,4 +30,15 @@
     font-size: 10px;
     line-height: 12px;
     color: #000000;
+}
+
+#navi{
+    position: absolute;
+    width: 289px;
+    height: 19px;
+    left: 205px;
+    top: 51px;
+
+    font-size: 16px;
+    line-height: 19px; 
 }
