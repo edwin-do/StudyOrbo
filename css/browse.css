@@ -80,6 +80,16 @@ a:hover{
     width: 167px;
 }
 
+#sort{
+    position: absolute;
+    width: 125px;
+    height: 40px;
+    left: 286px;
+    top: 259px;
+
+    border-radius: 200px;
+}
+
 
 
   

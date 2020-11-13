@@ -31,6 +31,7 @@
         <!-- header -->
         <div id="header"><span class="orange">Browse</span> through groups</div>
 
+        <!-- searchBar -->
         <div class="input-group mb-3" id="searchBar">
             <div class="input-group-prepend" id="filter">
                 <select class="custom-select fill-light-green" id="inputGroupSelect03" aria-label="Example select with button addon">
@@ -46,6 +47,23 @@
                 <button class="btn btn-dark" id="searchBtn" type="button">Search</button>
               </div>
         </div>
+
+
+        <div class="dropdown" id="sort">
+            <button type="button" class="btn btn-secondary dropdown-toggle" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+              Sort
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-sort-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3 2a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-1 0v-10A.5.5 0 0 1 3 2z"/>
+                <path fill-rule="evenodd" d="M5.354 10.146a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L3 11.793l1.646-1.647a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 9a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
 
         <!-- help & other links
         <div id="help" class="container">
