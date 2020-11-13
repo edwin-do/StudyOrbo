@@ -6,7 +6,7 @@ a:hover{
     position: absolute;
     width: 113px;
     height: 28px;
-    left: 27px;
+    left: 38px;
     top: 12px;
 
     font-family: Roboto;
@@ -21,7 +21,7 @@ a:hover{
     position: absolute;
     width: 117px;
     height: 12px;
-    left: 27px;
+    left: 38px;
     top: 45px;
 
     font-family: Roboto;
@@ -36,7 +36,7 @@ a:hover{
     position: absolute;
     width: 289px;
     height: 19px;
-    left: 205px;
+    left: 284px;
     top: 51px;
 
     font-size: 16px;
@@ -47,7 +47,7 @@ a:hover{
     position: absolute;
     width: 440px;
     height: 48px;
-    left: 168px;
+    left: 242px;
     top: 117px;
 
     font-size: 36px;
@@ -55,3 +55,31 @@ a:hover{
     text-align: center;
     color: #BBDDCC;
 }
+
+#searchBar{
+    position: absolute;
+    width: 873px;
+    height: 36px;
+    left: 287px;
+    top: 209px;
+}
+
+#inputGroupSelect03{
+    color: #828282; 
+}
+
+#filter{
+    width: 150px;
+    height: 35px;
+    border: 1px solid #D4D4D4;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+#searchBtn{
+    width: 167px;
+}
+
+
+
+  
