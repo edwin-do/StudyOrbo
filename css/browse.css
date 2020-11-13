@@ -2,6 +2,15 @@ a:hover{
     color: #ED9B82;
 }
 
+.row2{
+    margin-top: 20px;
+}
+
+.col-sm-6{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 #logo{
     position: absolute;
     width: 113px;
@@ -64,10 +73,6 @@ a:hover{
     top: 209px;
 }
 
-#inputGroupSelect03{
-    color: #828282; 
-}
-
 #filter{
     width: 150px;
     height: 35px;
@@ -84,12 +89,16 @@ a:hover{
     position: absolute;
     width: 125px;
     height: 40px;
-    left: 286px;
+    left: 285px;
     top: 259px;
-
     border-radius: 200px;
 }
 
-
+#cards{
+    position: absolute;
+    top: 309px;
+    left: 280px;
+    width: 920px;
+}
 
   
