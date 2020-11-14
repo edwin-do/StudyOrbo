@@ -10,8 +10,8 @@ a:hover{
 
 #cards{
     position: absolute;
-    top: 240px;
-    left: 290px;
+    top: 30.4%;
+    left: 20.1%;
     width: 900px;
 }
 
@@ -60,8 +60,8 @@ a:hover{
     position: absolute;
     width: 440px;
     height: 48px;
-    left: 242px;
-    top: 85px;
+    left: 17%;
+    top: 11%;
 
     font-size: 36px;
     line-height: 42px;
@@ -71,8 +71,8 @@ a:hover{
 
 #help{
     position: absolute;
-    left: 269px;
-    top: 730px;
+    left: 18.7%;
+    top: 92.5%;
 }
 
 .break{
@@ -87,8 +87,8 @@ a:hover{
     position: absolute;
     width: 113px;
     height: 28px;
-    left: 38px;
-    top: 12px;
+    left: 2.6%;
+    top: 1.5%;
 
     font-family: Roboto;
     font-style: normal;
@@ -102,8 +102,8 @@ a:hover{
     position: absolute;
     width: 289px;
     height: 19px;
-    left: 284px;
-    top: 51px;
+    left: 20%;
+    top: 5%;
 
     font-size: 16px;
     line-height: 19px; 
@@ -111,9 +111,9 @@ a:hover{
 
 .pagination{
     position: absolute;
-    top: 690px;
+    top: 87.5%;
     outline: 0;
-    left: 658px;
+    left: 45.7%;
 }
 
 .page-link{
@@ -129,8 +129,8 @@ a:hover{
     position: absolute;
     width: 117px;
     height: 12px;
-    left: 38px;
-    top: 45px;
+    left: 2.6%;
+    top: 5.7%;
 
     font-family: Roboto;
     font-style: normal;
@@ -144,8 +144,8 @@ a:hover{
     position: absolute;
     width: 873px;
     height: 36px;
-    left: 287px;
-    top: 140px;
+    left: 19.9%;
+    top: 17.7%;
 }
 
 #searchBtn{
@@ -156,8 +156,8 @@ a:hover{
     position: absolute;
     width: 125px;
     height: 40px;
-    left: 285px;
-    top: 185px;
+    left: 19.8%;
+    top: 23.4%;
     border-radius: 200px;
 }
 
