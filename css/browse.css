@@ -1,7 +1,14 @@
 
+#search{
+    margin-top: 5%;
+}
+
 #help{
     margin-top: 10%;
+    margin-bottom: 5%;
 }
+
+
 /* a:hover{
     color: #ED9B82;
 }
