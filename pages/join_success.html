@@ -22,7 +22,65 @@
             <h1 class="font-weight-light">Collaborate. Learn. Thrive.</h1>
         </div>
 
+        <!-- home intro -->
+        <div id="intro" class="jumbotron fill-dark-green text-center mb-0 pb-2">
+            <h1 class="display-4 white mb-3"><span id="joinName"></span>, You joined a group!</h1>
+            <h5 class="font-weight-normal">The groupID: <span class="white">231456</span><span class="orange"></span></h5>                  
+            <a href="../index.html" class="btn btn-dark mt-2">Back to Home</a>
+        </div>
+          <hr class="my-3">     
+          <h3 class="font-weight-light"><span class="font-weight-normal">Details</span> about the group you joined:</h3>
+        
+           <!-- Group Details -->  
+           <div class="card mb-5">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6 mb-2">
+                        <div class="mb-2">
+                            <span id="course" class="h4"></span>
+                        </div>
+                        <p class="card-text brown"><b>Where: <span id="address" class="dark-green"></span></b></p>
+                    </div>
+
+                    <div class="col-6"> 
+                        <div class="text-right">                         
+                            <div class="date">
+                                <b>
+                                    <span id="date_m"></span>&nbsp;<span id="date_d"></span>&nbsp;<span id="date_y"></span>
+                                    <br><span id="timeStart"></span> to <span id="timeEnd"></span>
+                                </b>
+                            </div>
+                      </div> 
+                  </div>
+              </div>
+
+              <p class="card-text"><span class="brown"><b>Description:</b></span><br><span id="desc"></span></p>
+              <div><span class="dark-green"><b>Capacity:</b></span> <span id="size"></span></div>
+              <div><span class="orange"><b>Private Group:</b></span> <span id="private"></span></div>
+              <div><span class="orange"><b>Host name:</b></span> <span id="host"></span></div>
+            </div>
+        </div>   
     </div>
+
+    <script>
+        document.getElementById('joinName').textContent = sessionStorage.joinName;
+        document.getElementById('course').textContent = "4HC3";
+        document.getElementById('address').textContent = "Thode Library";
+
+        document.getElementById('date_y').textContent = "2020";
+        document.getElementById('date_m').textContent = "Dec";
+        document.getElementById('date_d').textContent = "19";
+
+        document.getElementById('timeStart').textContent = "9:30 AM";
+        document.getElementById('timeEnd').textContent = "11:30 AM";
+
+        document.getElementById('desc').textContent = "Study Session at Thode!!";
+        document.getElementById('size').textContent = "7+";
+        document.getElementById('private').textContent = "Yes";
+        document.getElementById('host').textContent = "John Doe";
+
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
