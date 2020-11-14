@@ -32,6 +32,22 @@ a:hover{
 	width: 160px;
 }
 
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-active {
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 #filter{
     width: 150px;
     height: 35px;
@@ -85,6 +101,18 @@ a:hover{
 
     font-size: 16px;
     line-height: 19px; 
+}
+
+.pagination{
+    position: absolute;
+    top: 740px;
+    outline: 0;
+    left: 658px;
+}
+
+.page-link{
+    border: 0;
+    background-color: transparent;
 }
 
 .row2{
