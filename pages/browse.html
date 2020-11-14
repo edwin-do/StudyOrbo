@@ -39,14 +39,14 @@
         <!-- searchBar -->
         <div class="row justify-content-center">
         <div class="input-group col-md-10 mb-3" >
-            <button class="btn btn-secondary dropdown-toggle inputW" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter</button>
+            <button class="btn btn-secondary dropdown-toggle inputW" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course Code</button>
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Course Code</a>
                 <a class="dropdown-item" href="#">Host Name</a>
                 <a class="dropdown-item" href="#">Key word</a>
             </div>
-            <input type="text" placeholder="Search..." class="form-control " aria-label="Text input with dropdown button">
-            <div class="input-group-append">
+            <input type="text" id="inputText" onkeyup="searchUp()" placeholder="Search..." class="form-control " aria-label="Text input with dropdown button">
+            <div class="input-group-append" id="search" onclick="searchUp()">
                 <button class="btn btn-dark inputW" type="button">Search</button>
             </div>
         </div>
@@ -73,8 +73,40 @@
         
         <!-- cards -->
         <div class="container mt-3 col-md-10">
-        <div class="row">
-            <div class="col-sm-6">
+        <div class="row card-deck" id="myItems">
+            <div class="mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6 mb-2">
+                                <div class="mb-2">
+                                    <button type="button" class="btn mt-0 pt-0" id="" >
+                                        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-plus-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                        </svg>
+                                    </button>
+                                    <span class="h4 card-title">3MX3 <span class="h5">&#128516</span></span>
+                                </div>
+                                <p class="card-text brown"><b>Where: <span class="dark-green">Thode Library</span></b></p>
+                            </div>
+
+                            <div class="col-6"> 
+                                <div class="text-right">                         
+                                    <div class="date"><b>Today<br> 10:30AM to 2:00PM</b></div>
+                                    <span class="badge fill-orange white pill">Primary</span>
+                                    <span class="badge fill-light-green white pill">Primary</span>
+                                 </div> 
+                            </div>
+                      </div>
+  
+                      <p class="card-text"><span class="brown"><b>Description:</b></span><br>Come here to study about the Fitt’s Law together!</p>
+                      <div><span class="dark-green"><span class="square fill-light-green"></span><b class="ml-3">Capacity:</b></span> 4/5</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
@@ -106,7 +138,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="mb-3">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
@@ -138,39 +170,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 mt-3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-6 mb-2">
-                                <div class="mb-2">
-                                    <button type="button" class="btn mt-0 pt-0" id="" >
-                                        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-plus-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                        </svg>
-                                    </button>
-                                    <span class="h4">4HC3 <span class="h5">&#128516</span></span>
-                                </div>
-                                <p class="card-text brown"><b>Where: <span class="dark-green">Thode Library</span></b></p>
-                            </div>
-
-                            <div class="col-6"> 
-                                <div class="text-right">                         
-                                    <div class="date"><b>Today<br> 10:30AM to 2:00PM</b></div>
-                                    <span class="badge fill-orange white pill">Primary</span>
-                                    <span class="badge fill-light-green white pill">Primary</span>
-                              </div> 
-                          </div>
-                      </div>
-  
-                      <p class="card-text"><span class="brown"><b>Description:</b></span><br>Come here to study about the Fitt’s Law together!</p>
-                      <div><span class="dark-green"><span class="square fill-light-green"></span><b class="ml-3">Capacity:</b></span> 4/5</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 mt-3">
+            <div class="mb-3">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
@@ -227,6 +227,7 @@
         </div> 
     </div>
 
+    <script src="../js/browse.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
