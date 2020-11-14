@@ -40,40 +40,42 @@
         </div>
 
         <!-- form -->
-        <form id="form" class="container mt-4 ">
+        <form id="form" class="container mt-4" action="./create_success.html">
           <!-- row 1 -->
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Name</label>
-                <input type="text" class="form-control" id="inputName">
+                <input placeholder="Enter your name" type="text" class="form-control" id="inputName" required>
               </div>
               <div class="form-group col-md-6">
                 <label for="inputPassword4">Course</label>
-                <input type="text" class="form-control" id="inputCourse">
+                <input placeholder="Enter the course name/code"type="text" class="form-control" id="inputCourse" required>
               </div>
             </div>
             <!-- row 2 -->
             <div class="form-row">
               <div class="form-group col-12">
                 <label for="inputAddress">Description</label>
-                <input type="text" class="form-control" id="inputDesc" placeholder="Enter description here">
+                <input type="text" class="form-control" id="inputDesc" placeholder="Enter description here" required>
               </div>
             </div>
             <!-- row 3 -->
             <div class="form-row">
               <div class="form-group col-3">
                 <label for="inputSize">Group Size</label>
-                <select id="inputSize" class="form-control">
-                  <option selected>Choose...</option>
+                <select id="inputSize" class="form-control" required>
+                  <option selected ></option>
                   <option>2</option>
                   <option>3</option>
                   <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7+</option>
                 </select>
               </div>
               <div class="form-group col-3">
                 <label for="inputDateY">Date</label>
-                <select id="inputDateY" class="form-control">
-                  <option selected>Year</option>
+                <select id="inputDateY" class="form-control" required>
                   <option>2020</option>
                   <option>2021</option>
                   <option>2022</option>
@@ -81,8 +83,7 @@
               </div>
               <div class="form-group col-4 mt-2">
                 <label for="inputDateM"></label>
-                <select id="inputDateM" class="form-control">
-                  <option selected>Month</option>
+                <select id="inputDateM" class="form-control" required>
                   <option>Jan</option>
                   <option>Feb</option>
                   <option>March</option>
@@ -99,8 +100,7 @@
               </div>
               <div class="form-group col-2 mt-2">
                 <label for="inputDateD"></label>
-                <select id="inputDateD" class="form-control">
-                  <option selected>Day</option>
+                <select id="inputDateD" class="form-control" required>
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -137,9 +137,9 @@
             <!-- row 4 -->
             <div class="form-row">
               <div class="form-group col-5">
-                <label for="inputTimeStart">Time</label>
-                <select id="inputTimeStart" class="form-control">
-                  <option selected>Start time</option>
+                <label for="inputTimeStart">Time Start</label>
+                <select id="inputTimeStart" class="form-control" required>
+                  <option selected></option>
                   <option>6:30 AM</option>
                   <option>7:30 AM</option>
                   <option>8:30 AM</option>
@@ -157,10 +157,10 @@
                   <option>8:30 PM</option>
                 </select>
               </div>
-              <div class="form-group col-5 mt-2">
-                <label for="inputTimeEnd"></label>
-                <select id="inputTimeEnd" class="form-control">
-                  <option selected>End time</option>
+              <div class="form-group col-5">
+                <label for="inputTimeEnd">Time End</label>
+                <select id="inputTimeEnd" class="form-control" required>
+                  <option selected></option>
                   <option>7:30 AM</option>
                   <option>8:30 AM</option>
                   <option>9:30 AM</option>
@@ -192,13 +192,13 @@
           <!-- row 5 -->
           <div class="form-row">
             <div class="form-group col-12">
-              <label for="inputAddress">Address</label>
-              <input type="text" class="form-control" id="inputAddress">
+              <label for="inputAddress">Location/Address</label>
+              <input placeholder="Enter the location or address" type="text" class="form-control" id="inputAddress" required>
             </div>
           </div>
           <!-- buttons -->
           <div class="text-center mt-5">
-              <a href="./create_success.html" onclick="createGroup()" class="btn fill-light-green">Create!</a>
+              <input type="submit" href="./create_success.html" onclick="createGroup()" class="btn fill-light-green">
               <a href="../index.html" class="btn fill-orange">Cancel</a>
           </div>
         </form>
