@@ -15,15 +15,21 @@ function searchUp() {
 }
 
 function myFunction(elem) {
-    // Get the snackbar DIV
-    document.getElementById("course").textContent = elem.id;
-    document.getElementById(elem.id).disabled = true;
-    document.getElementById('P' + elem.id).style.backgroundColor = "lightgray";
-    var x = document.getElementById("snackbar");
-  
-    // Add the "show" class to DIV
-    x.className = "show";
-  
-    // After 3 seconds, remove the show class from DIV
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+
+    if(sessionStorage.joinName){
+        // Get the snackbar DIV
+        document.getElementById("course").textContent = elem.id;
+        document.getElementById(elem.id).disabled = true;
+        document.getElementById('P' + elem.id).style.backgroundColor = "lightgray";
+        var x = document.getElementById("snackbar");
+    
+        // Add the "show" class to DIV
+        x.className = "show";
+    
+        // After 3 seconds, remove the show class from DIV
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    else{
+        location.href ='../pages/join_intro.html'
+    }
   }

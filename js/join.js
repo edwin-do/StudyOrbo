@@ -14,4 +14,12 @@ function joinIntro(){
     
     sessionStorage.joinName = document.getElementById('joinName').value;
     sessionStorage.joinEmail = document.getElementById('joinEmail').value;
+
+    if(sessionStorage.groupID == "231456"){
+        location.href = "../pages/join_success.html";        
+    }
+    else{
+        location.href = "../pages/browse_success.html";
+    }
+
 }
