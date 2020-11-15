@@ -21,6 +21,14 @@
     color:#F8F9F8;
 }
 
+.fill-red{
+    background-color: #F47F7F;
+}
+
+.fill-green{
+    background-color: #6FCF97;
+}
+
 /* background */
 .fill-orange{
     background-color: #ED9B82;
