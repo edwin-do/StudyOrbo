@@ -23,3 +23,9 @@ function joinIntro(){
     }
 
 }
+
+function changeInfo(){
+    sessionStorage.joinName = document.getElementById('joinName').value;
+    sessionStorage.joinEmail = document.getElementById('joinEmail').value;
+    location.href = "../index.html";
+}

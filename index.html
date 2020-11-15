@@ -24,7 +24,7 @@
 
         <!-- home intro -->
         <div id="intro" class="jumbotron fill-dark-green text-center mb-0 pb-2">
-            <h1 class="display-4 white mb-3">Welcome!</h1>
+            <h1 class="display-4 white mb-3">Welcome <span id="joinName"></span>!</h1>
             <h5 class="font-weight-normal"><span class="white">Study</span><span class="orange">Orbo</span> is a tool to help students meet and collaborate to achieve success in their academic studies.</h5>                  
         </div>
           <hr class="my-3">     
@@ -59,7 +59,18 @@
                 </div>
               </div>
           </div>
+
+        <!-- help & other links -->
+        <div id="help" class="container">
+          <p> Someone else?
+              <a class="orange ml-2" href="./pages/changeInfo.html">Change info</a> 
+          </p>
+      </div>
     </div>
+
+      <script>
+        document.getElementById('joinName').textContent = sessionStorage.joinName;
+      </script>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
