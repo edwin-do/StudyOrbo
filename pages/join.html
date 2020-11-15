@@ -27,20 +27,26 @@
             <h1 class="display-4 font-weight-normal light-green"><span class="orange">Join</span> a group</h1>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                <button class="btn btn-secondary" type="button">GroupID</button>
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GroupID</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Course Code</a>
+                    <a class="dropdown-item" href="#">Host Name</a>
+                    <a class="dropdown-item" href="#">Key word</a>
                 </div>
-                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                </div>
+                <input id="groupID" type="text" class="form-control" aria-label="Text input with dropdown button">
                 <div class="input-group-append">
-                    <button class="btn btn-dark" type="button">Join</button>
-                  </div>
+                    <button onclick="joinGroup()" class="btn btn-dark" type="button">Join</button>
+                </div>
             </div>
+            <p id="message"></p>
         </div>
 
         <!-- help & other links -->
         <div id="help" class="container">
             <p>Can't find what you're looking for? 
-                <a class="orange ml-2" href="./create.html">Create a group</a> 
-                <a class="orange ml-3"href="./browse.html">Browse</a>
+                <a class="orange ml-2" href="#">Create a group</a> 
+                <a class="orange ml-3"href="#">Browse</a>
             </p>
         </div>
 
@@ -49,6 +55,6 @@
     <script src="../js/join.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
 </html>
