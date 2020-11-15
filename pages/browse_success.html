@@ -24,7 +24,7 @@
 
         <!-- home intro -->
         <div id="intro" class="jumbotron fill-dark-green text-center mb-0 pb-2">
-            <h1 class="display-4 white mb-3"><span id="joinName"></span>, You joined a group!</h1>
+            <h1 class="display-4 white mb-3"><span id="name"></span>, You joined a group!</h1>
             <!-- <h5 class="font-weight-normal">The groupID: <span class="white">231456</span><span class="orange"></span></h5>                   -->
             <a href="./browse.html" class="btn btn-dark mt-2">Back to Browse</a>
         </div>
@@ -34,6 +34,10 @@
         </div>       
         </div>
 
+        <script>
+            document.getElementById('name').textContent = sessionStorage.joinName;
+            document.getElementById('email').textContent = sessionStorage.joinEmail;
+        </script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>

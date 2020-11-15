@@ -63,13 +63,20 @@
         <!-- help & other links -->
         <div id="help" class="container">
           <p> Someone else?
-              <a class="orange ml-2" href="./pages/changeInfo.html">Change info</a> 
+              <a class="orange ml-2" href="./pages/changeInfo.html">Change name/email</a> 
           </p>
-      </div>
+        </div>
     </div>
 
       <script>
         document.getElementById('joinName').textContent = sessionStorage.joinName;
+
+        if(sessionStorage.joinName){
+          document.getElementById('help').style.display = "block";
+        }
+        else{
+          document.getElementById('help').style.display = "none";
+        }
       </script>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
